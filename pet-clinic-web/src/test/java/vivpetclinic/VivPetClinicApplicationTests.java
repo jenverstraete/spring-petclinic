@@ -1,4 +1,4 @@
-package viverit.vivpetclinic;
+package vivpetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
