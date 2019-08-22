@@ -14,7 +14,7 @@
     </parent>
     <groupId>viverit</groupId>
     <artifactId>viv-pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>viv-pet-clinic</name>
     <description>Pet Clinic project</description>
 
@@ -40,6 +40,6 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/jenverstraete/spring-petclinic.git</developerConnection>
-      <tag>viv-pet-clinic-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
