@@ -1,6 +1,6 @@
 package viverit.vivpetclinic.model;
 
-public class PetType {
+public class PetType extends BaseEntity{
     private String name;
 
     public String getName() {
