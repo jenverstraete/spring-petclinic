@@ -1,4 +1,4 @@
 package viverit.vivpetclinic.model;
 
-class Owner {
+public class Owner {
 }
