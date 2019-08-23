@@ -1,11 +1,11 @@
 package viverit.vivpetclinic.services.map;
 
 import viverit.vivpetclinic.model.Owner;
-import viverit.vivpetclinic.services.CrudService;
+import viverit.vivpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -29,5 +29,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner save(final Owner owner) {
         return super.save(owner.getId(), owner);
+    }
+
+    @Override
+    public Owner findByLastName(final String lastName) {
+        return null;
     }
 }

@@ -1,4 +1,4 @@
 package viverit.vivpetclinic.model;
 
-public class Owner extends BaseEntity{
+public class Owner extends Person{
 }
