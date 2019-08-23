@@ -6,17 +6,15 @@ import viverit.vivpetclinic.model.Owner;
 import viverit.vivpetclinic.model.Vet;
 import viverit.vivpetclinic.services.OwnerService;
 import viverit.vivpetclinic.services.VetService;
-import viverit.vivpetclinic.services.map.OwnerServiceMap;
-import viverit.vivpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(final OwnerService ownerService, final VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

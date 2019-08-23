@@ -1,10 +1,12 @@
 package viverit.vivpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import viverit.vivpetclinic.model.Vet;
 import viverit.vivpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

@@ -1,10 +1,12 @@
 package viverit.vivpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import viverit.vivpetclinic.model.Owner;
 import viverit.vivpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
