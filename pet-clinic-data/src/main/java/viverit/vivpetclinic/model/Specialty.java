@@ -1,0 +1,13 @@
+package viverit.vivpetclinic.model;
+
+public class Specialty extends BaseEntity {
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(final String description) {
+        this.description = description;
+    }
+}
