@@ -8,4 +8,4 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: mvn dependency:go-offline
+      - run: mvn install
