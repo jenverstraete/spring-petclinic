@@ -1,5 +1,6 @@
 package viverit.vivpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import viverit.vivpetclinic.model.Pet;
 import viverit.vivpetclinic.services.PetService;
@@ -7,7 +8,8 @@ import viverit.vivpetclinic.services.PetService;
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+@Profile({"default", "map"})
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

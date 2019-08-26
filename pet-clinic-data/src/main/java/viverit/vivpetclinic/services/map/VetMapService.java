@@ -1,5 +1,6 @@
 package viverit.vivpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import viverit.vivpetclinic.model.Specialty;
 import viverit.vivpetclinic.model.Vet;
@@ -9,10 +10,11 @@ import viverit.vivpetclinic.services.VetService;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+@Profile({"default", "map"})
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     private final SpecialtyService specialtyService;
 
-    public VetServiceMap(final SpecialtyService specialtyService) {
+    public VetMapService(final SpecialtyService specialtyService) {
         this.specialtyService = specialtyService;
     }
 

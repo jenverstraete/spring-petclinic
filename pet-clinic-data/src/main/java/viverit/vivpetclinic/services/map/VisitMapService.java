@@ -1,11 +1,15 @@
 package viverit.vivpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 import viverit.vivpetclinic.model.Visit;
 import viverit.vivpetclinic.services.VisitService;
 
 import java.util.Set;
 
-public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService{
+@Service
+@Profile({"default", "map"})
+public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService{
 
     @Override
     public Set<Visit> findAll() {
