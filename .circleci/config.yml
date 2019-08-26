@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - ownImplementation
     docker:
       - image: circleci/ruby:2.4.1
     steps:
