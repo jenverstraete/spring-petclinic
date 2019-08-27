@@ -8,6 +8,7 @@ import viverit.vivpetclinic.services.OwnerService;
 import viverit.vivpetclinic.services.PetService;
 import viverit.vivpetclinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -74,5 +75,10 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(final String lastName) {
+        return null;
     }
 }
