@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,7 +16,7 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends Person {
     @Builder
-    public Owner(final Long id, final @NotEmpty String firstName, final @NotEmpty String lastName,
+    public Owner(final Long id, final String firstName, final String lastName,
                  final String address, final String city, final String telephone, final Set<Pet> pets) {
         super(id, firstName, lastName);
         this.address = address;
